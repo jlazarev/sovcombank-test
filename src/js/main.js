@@ -84,7 +84,11 @@ function touchMenuOverlay () {
 }
 
 function toggleMenu () {
-  menuWrapper.classList.toggle('open-menu')
+  if (menuWrapper.classList.contains('open-menu')) {
+    touchMenuOverlay()
+  } else {
+    menuWrapper.classList.add('open-menu')
+  }
 }
 
 function desktopTouchMenuItem (menuItem, e) {
