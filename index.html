@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/scss/style.scss" />
+    <title>Sovcombank test</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo" aria-label="Переход на главную">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Главная</a>
+              </li>
+              <li class="header__menu-item header__menu-item--sub-menu js-item">
+                <a class="header__menu-link js-link" href="#">Основное меню</a>
+
+                <ul class="header__sub-menu js-sub-menu">
+                  <li class="header__sub-menu-item">
+                    <a href="#">Заказать вёрстку</a>
+                  </li>
+                  <li class="header__sub-menu-item header__sub-menu-item--sub-menu js-item">
+                    <a class="js-link" href="#">2 уровень меню</a>
+
+                    <ul class="header__sub-menu-inner js-sub-menu">
+                      <li class="header__sub-menu-inner-item">
+                        <a href="#">3 уровень меню</a>
+                      </li>
+                      <li class="header__sub-menu-inner-item">
+                        <a href="#">3 уровень меню с длинным текстом</a>
+                      </li>
+                      <li class="header__sub-menu-inner-item header__sub-menu-inner-item--sub-menu js-item">
+                        <a class="js-link" href="#">3 уровень меню </a>
+    
+                        <ul class="header__sub-menu-inner js-sub-menu">
+                          <li class="header__sub-menu-inner-item">
+                            <a href="#">4 уровень</a>
+                          </li>
+                          <li class="header__sub-menu-inner-item header__sub-menu-inner-item--sub-menu js-item">
+                            <a class="js-link" href="#">4 уровень</a>
+        
+                            <ul class="header__sub-menu-inner js-sub-menu">
+                              <li class="header__sub-menu-inner-item">
+                                <a href="#">5 уровень</a>
+                              </li>
+                              <li class="header__sub-menu-inner-item">
+                                <a href="#">5 уровень меню</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="header__sub-menu-inner-item">
+                            <a href="#">4 уровень</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__sub-menu-item">
+                    <a href="#">Отправить макет на проверку</a>
+                  </li>
+                  <li class="header__sub-menu-item">
+                    <a href="#">Хочу работать у вас</a>
+                  </li>
+                  <li class="header__sub-menu-item header__sub-menu-item--sub-menu js-item">
+                    <a class="js-link" href="#"><span>Есть предложение по работе с клиентами</span></a>
+
+                    <ul class="header__sub-menu-inner js-sub-menu">
+                      <li class="header__sub-menu-inner-item">
+                        <a href="#">У меня есть оффер</a>
+                      </li>
+                      <li class="header__sub-menu-inner-item">
+                        <a href="#">Сделать партнёром</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Наши сервисы</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <a href="tel:+13212223333" class="header__phone-link">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.62 7.79C5.06 10.62 7.38 12.93 10.21 14.38L12.41 12.18C12.68 11.91 13.08 11.821 13.43 11.94C14.55 12.311 15.76 12.51 17 12.51C17.55 12.51 18 12.96 18 13.51V17C18 17.55 17.55 18 17 18C7.61 18 0 10.391 0 1C0 0.45 0.45 0 1 0H4.5C5.05 0 5.5 0.45 5.5 1C5.5 2.25 5.7 3.45 6.07 4.57C6.18 4.92 6.1 5.31 5.82 5.59L3.62 7.79Z" fill="#5BC12C"/>
+            </svg>
+              
+            <span>+1 (321) 222 - 33 -33</span>
+          </a>
+
+          <button class="header__menu-btn" type="button" aria-label="меню">
+            <div class="header__menu-top-line"></div>
+            <div class="header__menu-bottom-line"></div>
+          </button>
+        </div>
+      </header>
+
+      <main class="main"></main>
+    </div>
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>

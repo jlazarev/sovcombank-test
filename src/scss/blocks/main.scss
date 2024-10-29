@@ -1,0 +1,19 @@
+@use "../var";
+
+.main {
+  flex: 1 0 auto;
+  background-image: url("/img/alpaca.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+
+  @media (max-width: var.$viewport--768) {
+    background-size: 200%;
+    background-position: 50% -71px;
+  }
+
+  @media (max-width: var.$viewport--767) {
+    background-size: cover;
+    background-position: 50% 0;
+  }
+}
